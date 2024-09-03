@@ -1,0 +1,10 @@
+name: habit-reminder
+
+services:
+  app:
+    build: .
+    container_name: app
+    volumes:
+      - ../:/var/www/html
+    ports:
+      - 8080:80
